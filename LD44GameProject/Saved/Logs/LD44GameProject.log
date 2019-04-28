@@ -1,4 +1,4 @@
-﻿Log file open, 04/28/19 11:14:43
+﻿Log file open, 04/28/19 11:38:52
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: LD44GameProject
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 7.425090
+LogStats: Stats thread started at 0.302379
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.411s to configure plugins.
+LogStreaming: Display: Took  0.166s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -149,435 +149,588 @@ LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
 LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogStreaming: Display: Took  0.001s to delete old logs.
+LogStreaming: Display: Took  0.000s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.04.28-15.14.46:954][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.04.28-15.14.46:954][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.46:962][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.47:042][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.04.28-15.14.47:042][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.04.28-15.14.47:043][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.04.28-15.14.47:044][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:044][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.04.28-15.14.47:045][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.04.28-15.14.47:052][  0]LogInit: Selected Device Profile: [Windows]
-[2019.04.28-15.14.47:052][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.04.28-15.14.47:127][  0]LogHAL: Display: Platform has ~ 8 GB [8503635968 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.04.28-15.14.47:133][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2019.04.28-15.14.47:133][  0]LogInit: Going up to parent DeviceProfile []
-[2019.04.28-15.14.47:134][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.04.28-15.14.47:134][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.04.28-15.14.47:135][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.04.28-15.14.47:136][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.04.28-15.14.47:166][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.04.28-15.14.47:167][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
-[2019.04.28-15.14.47:194][  0]LogInit: Computer: IRVINE-CLASS-PC
-[2019.04.28-15.14.47:194][  0]LogInit: User: Irvine
-[2019.04.28-15.14.47:194][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.04.28-15.14.47:194][  0]LogInit: High frequency timer resolution =2.742186 MHz
-[2019.04.28-15.14.47:214][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2019.04.28-15.14.47:214][  0]LogMemory: Platform Memory Stats for Windows
-[2019.04.28-15.14.47:214][  0]LogMemory: Process Physical Memory: 102.50 MB used, 102.50 MB peak
-[2019.04.28-15.14.47:214][  0]LogMemory: Process Virtual Memory: 93.84 MB used, 93.84 MB peak
-[2019.04.28-15.14.47:214][  0]LogMemory: Physical Memory: 4196.02 MB used,  3913.68 MB free, 8109.70 MB total
-[2019.04.28-15.14.47:214][  0]LogMemory: Virtual Memory: 4636.05 MB used,  134213088.00 MB free, 134217728.00 MB total
-[2019.04.28-15.14.48:206][  0]LogInit: Using OS detected language (fr-FR).
-[2019.04.28-15.14.48:206][  0]LogInit: Using OS detected locale (fr-FR).
-[2019.04.28-15.14.48:279][  0]LogTextLocalizationManager: No specific localization for 'fr-FR' exists, so the 'fr' localization will be used.
-[2019.04.28-15.14.48:399][  0]LogStreaming: Display: Took  0.179s to InitEngineTextLocalization.
-[2019.04.28-15.14.48:416][  0]LogInit: Setting process to per monitor DPI aware
-[2019.04.28-15.14.49:261][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.04.28-15.14.49:261][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.04.28-15.14.54:204][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.04.28-15.14.54:204][  0]LogD3D11RHI: D3D11 adapters:
-[2019.04.28-15.14.54:324][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
-[2019.04.28-15.14.54:324][  0]LogD3D11RHI:       1979/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.04.28-15.14.54:341][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
-[2019.04.28-15.14.54:341][  0]LogD3D11RHI:       128/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
-[2019.04.28-15.14.54:348][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.04.28-15.14.54:348][  0]LogD3D11RHI:       0/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.04.28-15.14.54:348][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.04.28-15.14.54:408][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.04.28-15.14.54:408][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
-[2019.04.28-15.14.54:408][  0]LogWindows: EnumDisplayDevices:
-[2019.04.28-15.14.54:408][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
-[2019.04.28-15.14.54:409][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2019.04.28-15.14.54:409][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
-[2019.04.28-15.14.54:409][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2019.04.28-15.14.54:410][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
-[2019.04.28-15.14.54:410][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2019.04.28-15.14.54:410][  0]LogD3D11RHI:      Driver Date: Unknown
-[2019.04.28-15.14.54:410][  0]LogRHI: Texture pool is 1385 MB (70% of 1979 MB)
-[2019.04.28-15.14.54:469][  0]LogD3D11RHI: Async texture creation enabled
-[2019.04.28-15.14.54:870][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.04.28-15.14.55:843][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.04.28-15.14.55:904][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.04.28-15.14.55:938][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.04.28-15.14.55:968][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.04.28-15.14.56:025][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.04.28-15.14.56:068][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.04.28-15.14.56:098][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.04.28-15.14.56:120][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.04.28-15.14.56:134][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:316][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:317][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.04.28-15.14.56:339][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.04.28-15.14.56:512][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.04.28-15.14.56:512][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.04.28-15.14.56:617][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.04.28-15.14.56:617][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.04.28-15.14.56:693][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.04.28-15.14.56:776][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.04.28-15.14.56:863][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.04.28-15.14.57:004][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.04.28-15.14.57:097][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.04.28-15.14.57:097][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2019.04.28-15.14.57:097][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.04.28-15.14.58:017][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Intermediate/Shaders/WorkingDirectory/30220/).
-[2019.04.28-15.14.58:018][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Irvine/AppData/Local/Temp/UnrealShaderWorkingDir/74CC5B6B4E7DAE2BDD51F682E4A0FAA8/'.
-[2019.04.28-15.14.58:124][  0]LogXGEController: Cleaning working directory: C:/Users/Irvine/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.04.28-15.14.58:125][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.04.28-15.14.58:126][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.04.28-15.14.58:126][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.04.28-15.15.02:850][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.04.28-15.15.03:557][  0]LogDerivedDataCache: Loaded boot cache 0.70s 71MB C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.04.28-15.15.03:558][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2019.04.28-15.15.03:558][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Unreal_Projects/LudumDare44/LD44GameProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.04.28-15.15.03:558][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.04.28-15.15.03:558][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Unreal_Projects/LudumDare44/LD44GameProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.04.28-15.15.03:558][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.04.28-15.15.03:679][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.04.28-15.15.03:680][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.04.28-15.15.03:680][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.04.28-15.15.03:694][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Irvine/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.04.28-15.15.03:694][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.04.28-15.15.03:694][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.04.28-15.15.03:821][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.04.28-15.15.03:946][  0]LogSlate: Using FreeType 2.6.0
-[2019.04.28-15.15.04:062][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.04.28-15.15.06:203][  0]LogAssetRegistry: FAssetRegistry took 0.0670 seconds to start up
-[2019.04.28-15.15.10:747][  0]LogInit: Selected Device Profile: [Windows]
-[2019.04.28-15.15.13:573][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.04.28-15.15.13:842][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.04.28-15.15.13:843][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.04.28-15.15.13:892][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.04.28-15.15.13:892][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.04.28-15.15.14:660][  0]LogNetVersion: LD44GameProject 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2887747818)
-[2019.04.28-15.15.24:854][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.302207 seconds
-[2019.04.28-15.15.24:950][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2019.04.28-15.15.24:950][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
-[2019.04.28-15.15.24:950][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.04.28-15.15.50:565][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.04.28-15.15.50:595][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.04.28-15.15.53:371][  0]SourceControl: Source control is disabled
-[2019.04.28-15.15.53:382][  0]SourceControl: Source control is disabled
-[2019.04.28-15.15.53:481][  0]SourceControl: Source control is disabled
-[2019.04.28-15.15.53:503][  0]SourceControl: Source control is disabled
-[2019.04.28-15.15.55:507][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.04.28-15.15.55:813][  0]LogOcInput: OculusInput pre-init called
-[2019.04.28-15.15.58:946][  0]LogAutomationTest: Warning: Smoke tests took > 2s to run: 2.13s
-[2019.04.28-15.15.59:125][  0]LogEngine: Initializing Engine...
-[2019.04.28-15.15.59:194][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.04.28-15.15.59:255][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.001 s
-[2019.04.28-15.15.59:255][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.04.28-15.15.59:256][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.001 s
-[2019.04.28-15.15.59:256][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.04.28-15.16.00:898][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.04.28-15.16.01:994][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.04.28-15.16.02:585][  0]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2019.04.28-15.16.02:861][  0]LogInit: FAudioDevice initialized.
-[2019.04.28-15.16.02:874][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.04.28-15.16.03:039][  0]LogDerivedDataCache: Saved boot cache 0.17s 71MB C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2019.04.28-15.16.03:068][  0]LogInit: Texture streaming: Enabled
-[2019.04.28-15.16.03:328][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.04.28-15.16.03:781][  0]LogInit: Transaction tracking system initialized
-[2019.04.28-15.16.04:618][  0]BlueprintLog: New page: Editor Load
-[2019.04.28-15.16.06:587][  0]LocalizationService: Localization service is disabled
-[2019.04.28-15.16.12:297][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/' took 0.06s
-[2019.04.28-15.16.12:297][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.04.28-15.16.12:359][  0]LogCook: Display: Mobile HDR setting 1
-[2019.04.28-15.16.12:384][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.04.28-15.16.12:384][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2019.04.28-15.16.12:384][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.04.28-15.16.12:384][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2019.04.28-15.16.12:384][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.04.28-15.16.15:088][  0]SourceControl: Source control is disabled
-[2019.04.28-15.16.15:140][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.04.28-15.16.15:241][  0]LightingResults: New page: Lighting Build
-[2019.04.28-15.16.15:644][  0]MapCheck: New page: Map Check
-[2019.04.28-15.16.15:644][  0]LightingResults: New page: Lighting Build
-[2019.04.28-15.16.22:359][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2019.04.28-15.16.23:653][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.04.28-15.16.23:940][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.04.28-15.16.23:958][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,353ms to complete.
-[2019.04.28-15.16.23:966][  0]LogFileHelpers: Loading map 'Template_Default' took 8.846
-[2019.04.28-15.16.26:867][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.28-15.16.26:940][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.28-15.16.26:958][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.28-15.16.26:971][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.04.28-15.16.27:220][  0]LogCollectionManager: Loaded 0 collections in 0.006058 seconds
-[2019.04.28-15.16.27:563][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Collections/' took 0.01s
-[2019.04.28-15.16.27:563][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/Developers/Irvine/Collections/' took 0.01s
-[2019.04.28-15.16.27:563][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/Collections/' took 0.00s
-[2019.04.28-15.16.27:563][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2019.04.28-15.16.27:623][  0]LogContentBrowser: Native class hierarchy populated in 0.0450 seconds. Added 2651 classes and 620 folders.
-[2019.04.28-15.16.27:837][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0009 seconds. Added 0 classes and 0 folders.
-[2019.04.28-15.16.27:958][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:032][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:050][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:071][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:081][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:086][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:104][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:114][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:124][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:135][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:139][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:155][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:165][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:179][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:195][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:215][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:236][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:241][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:257][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:279][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:300][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:310][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:322][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:332][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.28:342][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.04.28-15.16.29:118][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
-[2019.04.28-15.16.29:210][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
-[2019.04.28-15.16.32:434][  0]LogSlate: Took 0.011020 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.04.28-15.16.32:570][  0]LogSlate: Took 0.030147 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.04.28-15.16.32:797][  0]LogSlate: Took 0.018690 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.04.28-15.16.34:428][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
-[2019.04.28-15.16.38:431][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 0 classes and 0 folders.
-[2019.04.28-15.16.38:431][  0]LogLoad: (Engine Initialization) Total time: 137.44 seconds
-[2019.04.28-15.16.38:431][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.04 seconds
-[2019.04.28-15.16.39:624][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.04.28-15.16.41:092][  4]LogAssetRegistry: Asset discovery search completed in 94.9115 seconds
-[2019.04.28-15.16.41:154][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2019.04.28-15.16.41:155][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.023152 seconds (updated 0 objects)
-[2019.04.28-15.16.44:267][165]LogSlate: Took 0.018066 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.04.28-15.20.47:160][684]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.28-15.20.48:224][733]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.04.28-15.20.50:134][816]Cmd: MAP LOAD FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.04.28-15.20.50:151][816]LogSlate: Took 0.000693 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.04.28-15.20.50:216][816]LightingResults: New page: Lighting Build
-[2019.04.28-15.20.50:218][816]LoadErrors: New page: Loading map: TestMap.umap
-[2019.04.28-15.20.50:314][816]MapCheck: New page: Map Check
-[2019.04.28-15.20.50:315][816]LightingResults: New page: Lighting Build
-[2019.04.28-15.20.51:503][816]LogAIModule: Creating AISystem for world TestMap
-[2019.04.28-15.20.51:940][816]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.04.28-15.20.52:137][816]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.04.28-15.20.52:138][816]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,151ms to complete.
-[2019.04.28-15.20.52:138][816]LogFileHelpers: Loading map 'TestMap' took 2.124
-[2019.04.28-15.20.52:147][816]LogSlate: Window 'Open Level' being destroyed
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:088][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.04.28-15.38.53:088][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.04.28-15.38.53:089][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:089][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:098][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.04.28-15.38.53:099][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.04.28-15.38.53:100][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.04.28-15.38.53:101][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:101][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.04.28-15.38.53:102][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.04.28-15.38.53:102][  0]LogInit: Selected Device Profile: [Windows]
+[2019.04.28-15.38.53:102][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.04.28-15.38.53:125][  0]LogHAL: Display: Platform has ~ 8 GB [8503635968 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.04.28-15.38.53:125][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2019.04.28-15.38.53:125][  0]LogInit: Going up to parent DeviceProfile []
+[2019.04.28-15.38.53:126][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.04.28-15.38.53:126][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.04.28-15.38.53:127][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Scalability.ini]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.04.28-15.38.53:128][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.04.28-15.38.53:130][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.04.28-15.38.53:130][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
+[2019.04.28-15.38.53:130][  0]LogInit: Computer: IRVINE-CLASS-PC
+[2019.04.28-15.38.53:130][  0]LogInit: User: Irvine
+[2019.04.28-15.38.53:130][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.04.28-15.38.53:130][  0]LogInit: High frequency timer resolution =2.742186 MHz
+[2019.04.28-15.38.53:130][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.04.28-15.38.53:130][  0]LogMemory: Platform Memory Stats for Windows
+[2019.04.28-15.38.53:130][  0]LogMemory: Process Physical Memory: 101.78 MB used, 101.78 MB peak
+[2019.04.28-15.38.53:130][  0]LogMemory: Process Virtual Memory: 91.40 MB used, 91.40 MB peak
+[2019.04.28-15.38.53:130][  0]LogMemory: Physical Memory: 5150.62 MB used,  2959.08 MB free, 8109.70 MB total
+[2019.04.28-15.38.53:131][  0]LogMemory: Virtual Memory: 4633.61 MB used,  134213096.00 MB free, 134217728.00 MB total
+[2019.04.28-15.38.53:172][  0]LogInit: Using OS detected language (fr-FR).
+[2019.04.28-15.38.53:172][  0]LogInit: Using OS detected locale (fr-FR).
+[2019.04.28-15.38.53:173][  0]LogTextLocalizationManager: No specific localization for 'fr-FR' exists, so the 'fr' localization will be used.
+[2019.04.28-15.38.53:175][  0]LogStreaming: Display: Took  0.003s to InitEngineTextLocalization.
+[2019.04.28-15.38.53:175][  0]LogInit: Setting process to per monitor DPI aware
+[2019.04.28-15.38.53:227][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.04.28-15.38.53:227][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.04.28-15.38.53:524][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.04.28-15.38.53:524][  0]LogD3D11RHI: D3D11 adapters:
+[2019.04.28-15.38.53:615][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2019.04.28-15.38.53:615][  0]LogD3D11RHI:       1979/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.04.28-15.38.53:630][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2019.04.28-15.38.53:630][  0]LogD3D11RHI:       128/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.04.28-15.38.53:632][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.04.28-15.38.53:632][  0]LogD3D11RHI:       0/0/4054 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.04.28-15.38.53:632][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.04.28-15.38.53:666][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.04.28-15.38.53:666][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2019.04.28-15.38.53:666][  0]LogWindows: EnumDisplayDevices:
+[2019.04.28-15.38.53:667][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2019.04.28-15.38.53:667][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.04.28-15.38.53:667][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.04.28-15.38.53:668][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.04.28-15.38.53:668][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2019.04.28-15.38.53:668][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.04.28-15.38.53:668][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.04.28-15.38.53:668][  0]LogRHI: Texture pool is 1385 MB (70% of 1979 MB)
+[2019.04.28-15.38.53:720][  0]LogD3D11RHI: Async texture creation enabled
+[2019.04.28-15.38.53:739][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.04.28-15.38.54:163][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.04.28-15.38.54:176][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.04.28-15.38.54:191][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.04.28-15.38.54:205][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.04.28-15.38.54:221][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.04.28-15.38.54:235][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.04.28-15.38.54:250][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.04.28-15.38.54:265][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.04.28-15.38.54:271][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:356][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.04.28-15.38.54:359][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.04.28-15.38.54:421][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.04.28-15.38.54:421][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.04.28-15.38.54:447][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.04.28-15.38.54:447][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.04.28-15.38.54:459][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.04.28-15.38.54:473][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.04.28-15.38.54:487][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.04.28-15.38.54:501][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.04.28-15.38.54:549][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.04.28-15.38.54:549][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.04.28-15.38.54:549][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.04.28-15.38.54:612][  0]LogShaderCompilers: Guid format shader working directory is -11 characters bigger than the processId version (../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Intermediate/Shaders/WorkingDirectory/9612/).
+[2019.04.28-15.38.54:612][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Irvine/AppData/Local/Temp/UnrealShaderWorkingDir/4E4C38884C3029F14F157096AE91AA4F/'.
+[2019.04.28-15.38.54:614][  0]LogXGEController: Cleaning working directory: C:/Users/Irvine/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.04.28-15.38.54:615][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.04.28-15.38.54:615][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.04.28-15.38.54:615][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.04.28-15.38.55:244][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: Loaded boot cache 0.06s 71MB C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Unreal_Projects/LudumDare44/LD44GameProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Unreal_Projects/LudumDare44/LD44GameProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.04.28-15.38.55:309][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.04.28-15.38.55:325][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.04.28-15.38.55:325][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.04.28-15.38.55:325][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.04.28-15.38.55:338][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Irvine/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.04.28-15.38.55:338][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.04.28-15.38.55:338][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.04.28-15.38.55:363][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.04.28-15.38.55:365][  0]LogSlate: Using FreeType 2.6.0
+[2019.04.28-15.38.55:366][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.04.28-15.38.55:478][  0]LogAssetRegistry: FAssetRegistry took 0.0328 seconds to start up
+[2019.04.28-15.38.55:827][  0]LogInit: Selected Device Profile: [Windows]
+[2019.04.28-15.38.56:000][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.04.28-15.38.56:003][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.04.28-15.38.56:003][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.04.28-15.38.56:003][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.04.28-15.38.56:003][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.04.28-15.38.56:020][  0]LogNetVersion: LD44GameProject 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2887747818)
+[2019.04.28-15.38.56:742][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.186825 seconds
+[2019.04.28-15.38.56:752][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2019.04.28-15.38.56:752][  0]LogUObjectAllocator: 6914656 out of 0 bytes used by permanent object pool.
+[2019.04.28-15.38.56:752][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.04.28-15.38.57:934][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.04.28-15.38.57:948][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.04.28-15.38.58:973][  0]SourceControl: Source control is disabled
+[2019.04.28-15.38.58:973][  0]SourceControl: Source control is disabled
+[2019.04.28-15.38.58:975][  0]SourceControl: Source control is disabled
+[2019.04.28-15.38.58:976][  0]SourceControl: Source control is disabled
+[2019.04.28-15.38.59:179][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.04.28-15.38.59:260][  0]LogOcInput: OculusInput pre-init called
+[2019.04.28-15.38.59:430][  0]LogEngine: Initializing Engine...
+[2019.04.28-15.38.59:431][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.04.28-15.38.59:432][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.04.28-15.38.59:432][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.04.28-15.38.59:433][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.04.28-15.38.59:433][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.04.28-15.38.59:743][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.04.28-15.38.59:764][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.04.28-15.38.59:819][  0]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.38.59:918][  0]LogInit: FAudioDevice initialized.
+[2019.04.28-15.38.59:919][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.04.28-15.39.00:114][  0]LogDerivedDataCache: Saved boot cache 0.20s 71MB C:/Users/Irvine/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2019.04.28-15.39.00:130][  0]LogInit: Texture streaming: Enabled
+[2019.04.28-15.39.00:166][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.04.28-15.39.00:179][  0]LogInit: Transaction tracking system initialized
+[2019.04.28-15.39.00:207][  0]BlueprintLog: New page: Editor Load
+[2019.04.28-15.39.00:293][  0]LocalizationService: Localization service is disabled
+[2019.04.28-15.39.00:796][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/' took 0.01s
+[2019.04.28-15.39.00:796][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.04.28-15.39.00:796][  0]LogCook: Display: Mobile HDR setting 1
+[2019.04.28-15.39.00:796][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.04.28-15.39.00:796][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.04.28-15.39.00:796][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.04.28-15.39.00:796][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.04.28-15.39.00:796][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.04.28-15.39.00:963][  0]SourceControl: Source control is disabled
+[2019.04.28-15.39.00:963][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.04.28-15.39.00:963][  0]LightingResults: New page: Lighting Build
+[2019.04.28-15.39.00:965][  0]MapCheck: New page: Map Check
+[2019.04.28-15.39.00:965][  0]LightingResults: New page: Lighting Build
+[2019.04.28-15.39.01:153][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2019.04.28-15.39.01:164][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.04.28-15.39.01:193][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.04.28-15.39.01:193][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,145ms to complete.
+[2019.04.28-15.39.01:193][  0]LogFileHelpers: Loading map 'Template_Default' took 0.230
+[2019.04.28-15.39.01:316][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.39.01:325][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.39.01:335][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.39.01:342][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.39.01:347][  0]LogCollectionManager: Loaded 0 collections in 0.001659 seconds
+[2019.04.28-15.39.01:378][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Saved/Collections/' took 0.01s
+[2019.04.28-15.39.01:378][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/Developers/Irvine/Collections/' took 0.00s
+[2019.04.28-15.39.01:378][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal_Projects/LudumDare44/LD44GameProject/Content/Collections/' took 0.01s
+[2019.04.28-15.39.01:378][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.04.28-15.39.01:387][  0]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 2651 classes and 620 folders.
+[2019.04.28-15.39.01:393][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.04.28-15.39.01:395][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:396][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:396][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:397][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:397][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:398][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:399][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:399][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:400][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:400][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:401][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:401][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:402][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:402][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:403][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:403][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:404][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:404][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:405][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:405][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:406][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:406][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:407][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:407][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:408][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:408][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2019.04.28-15.39.01:461][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.04.28-15.39.01:466][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.04.28-15.39.01:533][  0]LogSlate: Took 0.000545 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.04.28-15.39.01:536][  0]LogSlate: Took 0.000327 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.04.28-15.39.01:548][  0]LogSlate: Took 0.000330 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.04.28-15.39.01:663][  0]LogRenderer: Reallocating scene render targets to support 1208x576 Format 10 NumSamples 1 (Frame:1).
+[2019.04.28-15.39.01:882][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.04.28-15.39.01:882][  0]LogLoad: (Engine Initialization) Total time: 11.26 seconds
+[2019.04.28-15.39.01:882][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.04.28-15.39.01:902][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.04.28-15.39.01:973][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.04.28-15.39.02:013][  1]LogAssetRegistry: Asset discovery search completed in 6.5577 seconds
+[2019.04.28-15.39.02:014][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.04.28-15.39.02:014][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000043 seconds (updated 0 objects)
+[2019.04.28-15.39.03:893][104]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-15.39.05:996][230]LogSlate: Took 0.000184 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.04.28-15.39.06:298][248]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-15.39.07:464][315]Cmd: MAP LOAD FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.04.28-15.39.07:467][315]LogSlate: Took 0.000240 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.04.28-15.39.07:493][315]LightingResults: New page: Lighting Build
+[2019.04.28-15.39.07:495][315]LoadErrors: New page: Loading map: TestMap.umap
+[2019.04.28-15.39.07:497][315]MapCheck: New page: Map Check
+[2019.04.28-15.39.07:497][315]LightingResults: New page: Lighting Build
+[2019.04.28-15.39.07:622][315]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.39.07:691][315]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.04.28-15.39.07:737][315]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.04.28-15.39.07:737][315]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,117ms to complete.
+[2019.04.28-15.39.07:737][315]LogFileHelpers: Loading map 'TestMap' took 0.274
+[2019.04.28-15.39.07:739][315]LogSlate: Window 'Open Level' being destroyed
+[2019.04.28-15.39.10:461][473]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.42.38:033][286]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-15.42.41:308][455]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-15.43.00:744][620]LogSlate: Window 'Add Content to the Project' being destroyed
+[2019.04.28-15.47.45:072][128]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.47.45:320][132]LogActorFactory: Actor Factory created Cube
+[2019.04.28-15.47.47:153][226]LogActorFactory: Actor Factory created Cube
+[2019.04.28-15.48.02:777][ 91]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.48.02:877][ 97]LogTemp: Repeating last play command: Selected Viewport
+[2019.04.28-15.48.02:887][ 97]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.02:888][ 97]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.04.28-15.48.02:888][ 97]PIE: New page: PIE session: TestMap (28 avr. 2019 07:48:02)
+[2019.04.28-15.48.02:901][ 97]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestMap
+[2019.04.28-15.48.02:904][ 97]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002556s)
+[2019.04.28-15.48.02:904][ 97]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.48.02:904][ 97]LogPlayLevel: PIE: World Init took: (0.000719s)
+[2019.04.28-15.48.02:904][ 97]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestMap.TestMap to /Game/UEDPIE_0_TestMap.TestMap (0.003519s)
+[2019.04.28-15.48.03:029][ 97]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.48.03:109][ 97]LogInit: FAudioDevice initialized.
+[2019.04.28-15.48.03:155][ 97]LogLoad: Game class is 'TestMode_C'
+[2019.04.28-15.48.03:158][ 97]LogWorld: Bringing World /Game/UEDPIE_0_TestMap.TestMap up for play (max tick rate 60) at 2019.04.28-11.48.03
+[2019.04.28-15.48.03:158][ 97]LogWorld: Bringing up level for play took: 0.001302
+[2019.04.28-15.48.03:180][ 97]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 20 classes and 0 folders.
+[2019.04.28-15.48.03:181][ 97]PIE: Play in editor start time for /Game/UEDPIE_0_TestMap 0,375
+[2019.04.28-15.48.03:181][ 97]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.03:893][136]LogBlueprintUserMessages: [BulletSpawn_2] 99
+[2019.04.28-15.48.04:893][196]LogBlueprintUserMessages: [BulletSpawn_2] 98
+[2019.04.28-15.48.05:894][256]LogBlueprintUserMessages: [BulletSpawn_2] 97
+[2019.04.28-15.48.06:893][316]LogBlueprintUserMessages: [BulletSpawn_2] 96
+[2019.04.28-15.48.07:895][376]LogBlueprintUserMessages: [BulletSpawn_2] 95
+[2019.04.28-15.48.08:894][436]LogBlueprintUserMessages: [BulletSpawn_2] 94
+[2019.04.28-15.48.09:597][478]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.09:599][478]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.48.09:634][478]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.04.28-15.48.09:634][478]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.09:664][478]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.48.09:693][480]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.04.28-15.48.14:683][776]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-15.48.14:703][776]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.04.28-15.48.14:870][776]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMap9205DCF8434CEA70C7E2FAB78378FF73.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap'
+[2019.04.28-15.48.14:907][776]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap_BuiltData" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset" SILENT=true
+[2019.04.28-15.48.14:932][776]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMap_BuiltData734EF5A84357AF4B5983599D783D313E.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset'
+[2019.04.28-15.48.16:815][887]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.48.16:962][895]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/BluePrints/BulletSpawn.BulletSpawn
+[2019.04.28-15.48.17:530][895]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 117 classes and 0 folders.
+[2019.04.28-15.48.18:459][895]LogSlate: Took 0.000352 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.04.28-15.48.18:546][896]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.04.28-15.48.44:710][253]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrints/BulletSpawn" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/BluePrints/BulletSpawn.uasset" SILENT=true
+[2019.04.28-15.48.44:745][253]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/BulletSpawn87AA71294C0D4C090634BF82C94F4E79.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/BluePrints/BulletSpawn.uasset'
+[2019.04.28-15.48.46:059][331]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.48.46:142][336]BlueprintLog: New page: Compile BulletSpawn
+[2019.04.28-15.48.48:694][475]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.48.48:811][482]LogTemp: Repeating last play command: Selected Viewport
+[2019.04.28-15.48.48:826][482]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.48:826][482]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.04.28-15.48.48:827][482]PIE: New page: PIE session: TestMap (28 avr. 2019 07:48:48)
+[2019.04.28-15.48.48:827][482]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestMap
+[2019.04.28-15.48.48:829][482]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002212s)
+[2019.04.28-15.48.48:829][482]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.48.48:830][482]LogPlayLevel: PIE: World Init took: (0.000636s)
+[2019.04.28-15.48.48:830][482]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestMap.TestMap to /Game/UEDPIE_0_TestMap.TestMap (0.002993s)
+[2019.04.28-15.48.48:861][482]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.48.48:920][482]LogInit: FAudioDevice initialized.
+[2019.04.28-15.48.48:951][482]LogLoad: Game class is 'TestMode_C'
+[2019.04.28-15.48.48:953][482]LogWorld: Bringing World /Game/UEDPIE_0_TestMap.TestMap up for play (max tick rate 60) at 2019.04.28-11.48.48
+[2019.04.28-15.48.48:953][482]LogWorld: Bringing up level for play took: 0.000994
+[2019.04.28-15.48.48:967][482]PIE: Play in editor start time for /Game/UEDPIE_0_TestMap 0,161
+[2019.04.28-15.48.48:967][482]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.51:283][617]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.51:283][617]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.48.51:326][617]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.04.28-15.48.51:326][617]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.48.51:358][617]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.48.51:388][619]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2019.04.28-15.48.52:697][694]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2019.04.28-15.48.55:861][882]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.49.12:842][859]LogTemp: Repeating last play command: Selected Viewport
+[2019.04.28-15.49.12:854][859]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.49.12:854][859]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.04.28-15.49.12:854][859]PIE: New page: PIE session: TestMap (28 avr. 2019 07:49:12)
+[2019.04.28-15.49.12:854][859]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestMap
+[2019.04.28-15.49.12:858][859]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003577s)
+[2019.04.28-15.49.12:859][859]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.49.12:859][859]LogPlayLevel: PIE: World Init took: (0.000748s)
+[2019.04.28-15.49.12:859][859]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestMap.TestMap to /Game/UEDPIE_0_TestMap.TestMap (0.004568s)
+[2019.04.28-15.49.12:897][859]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.49.12:961][859]LogInit: FAudioDevice initialized.
+[2019.04.28-15.49.12:993][859]LogLoad: Game class is 'TestMode_C'
+[2019.04.28-15.49.12:995][859]LogWorld: Bringing World /Game/UEDPIE_0_TestMap.TestMap up for play (max tick rate 60) at 2019.04.28-11.49.12
+[2019.04.28-15.49.13:069][859]LogWorld: Bringing up level for play took: 0.074082
+[2019.04.28-15.49.13:082][859]PIE: Play in editor start time for /Game/UEDPIE_0_TestMap 0,276
+[2019.04.28-15.49.13:082][859]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.49.15:168][983]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.49.15:168][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.49.15:206][983]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.04.28-15.49.15:206][983]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.49.15:244][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.49.15:276][985]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2019.04.28-15.49.17:060][ 92]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube2)
+[2019.04.28-15.49.21:661][364]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.49.28:458][770]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.49.28:633][780]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/BluePrints/Bullet.Bullet
+[2019.04.28-15.49.30:979][890]LogRenderer: Reallocating scene render targets to support 1208x712 Format 10 NumSamples 1 (Frame:1).
+[2019.04.28-15.49.59:768][535]LogTemp: Repeating last play command: Selected Viewport
+[2019.04.28-15.49.59:780][535]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.49.59:780][535]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.04.28-15.49.59:780][535]PIE: New page: PIE session: TestMap (28 avr. 2019 07:49:59)
+[2019.04.28-15.49.59:780][535]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestMap
+[2019.04.28-15.49.59:782][535]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002098s)
+[2019.04.28-15.49.59:783][535]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.49.59:783][535]LogPlayLevel: PIE: World Init took: (0.000575s)
+[2019.04.28-15.49.59:783][535]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestMap.TestMap to /Game/UEDPIE_0_TestMap.TestMap (0.002808s)
+[2019.04.28-15.49.59:822][535]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.49.59:888][535]LogInit: FAudioDevice initialized.
+[2019.04.28-15.49.59:925][535]LogLoad: Game class is 'TestMode_C'
+[2019.04.28-15.49.59:926][535]LogWorld: Bringing World /Game/UEDPIE_0_TestMap.TestMap up for play (max tick rate 60) at 2019.04.28-11.49.59
+[2019.04.28-15.49.59:927][535]LogWorld: Bringing up level for play took: 0.000912
+[2019.04.28-15.49.59:940][535]PIE: Play in editor start time for /Game/UEDPIE_0_TestMap 1,134
+[2019.04.28-15.49.59:940][535]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.04:198][789]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.04:198][789]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.50.04:235][789]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.04.28-15.50.04:235][789]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.04:269][789]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.50.04:300][791]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2019.04.28-15.50.05:265][849]LogEditorViewport: Clicking on Actor (LMB): BulletSpawn_C (BulletSpawn)
+[2019.04.28-15.50.13:026][312]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-15.50.13:176][321]LogTemp: Repeating last play command: Selected Viewport
+[2019.04.28-15.50.13:186][321]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.13:186][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.04.28-15.50.13:186][321]PIE: New page: PIE session: TestMap (28 avr. 2019 07:50:13)
+[2019.04.28-15.50.13:186][321]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestMap
+[2019.04.28-15.50.13:189][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002164s)
+[2019.04.28-15.50.13:189][321]LogAIModule: Creating AISystem for world TestMap
+[2019.04.28-15.50.13:189][321]LogPlayLevel: PIE: World Init took: (0.000493s)
+[2019.04.28-15.50.13:189][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestMap.TestMap to /Game/UEDPIE_0_TestMap.TestMap (0.002823s)
+[2019.04.28-15.50.13:227][321]LogInit: XAudio2 using 'Haut-parleurs (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.04.28-15.50.13:287][321]LogInit: FAudioDevice initialized.
+[2019.04.28-15.50.13:320][321]LogLoad: Game class is 'TestMode_C'
+[2019.04.28-15.50.13:321][321]LogWorld: Bringing World /Game/UEDPIE_0_TestMap.TestMap up for play (max tick rate 60) at 2019.04.28-11.50.13
+[2019.04.28-15.50.13:322][321]LogWorld: Bringing up level for play took: 0.000879
+[2019.04.28-15.50.13:335][321]PIE: Play in editor start time for /Game/UEDPIE_0_TestMap 0,529
+[2019.04.28-15.50.13:335][321]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.16:180][490]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.16:180][490]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.50.16:218][490]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.04.28-15.50.16:219][490]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TestMap.TestMap:PersistentLevel.TestMap'
+[2019.04.28-15.50.16:271][490]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.04.28-15.50.16:284][491]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2019.04.28-15.50.18:489][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.04.28-15.50.18:679][621]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMap828149C641B20DD4C6B715938674F6B1.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap'
+[2019.04.28-15.50.18:726][621]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap_BuiltData" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset" SILENT=true
+[2019.04.28-15.50.18:742][621]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMap_BuiltDataD260F761482FE795A107F996FE3B43B4.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset'
