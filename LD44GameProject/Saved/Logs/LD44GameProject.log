@@ -154,6 +154,7 @@ LogInit: Presizing for max 8388607 objects, including 0 objects not considered b
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+
 [2019.04.28-19.24.39:054][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2019.04.28-19.24.39:054][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2019.04.28-19.24.39:054][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UserData/Personal/GitHub/LudumDare44/LD44GameProject/Saved/Config/Windows/Engine.ini]
@@ -839,3 +840,4 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.04.28-20.45.45:877][ 68]OBJ SavePackage: Finished generating thumbnails for package [/Game/BluePrints/Player_withQTE]
 [2019.04.28-20.45.45:925][ 68]LogSavePackage: Moving 'D:/UserData/Personal/GitHub/LudumDare44/LD44GameProject/Saved/Player_withQTE_Auto2FE6306184372B66399044389D62DD484.tmp' to 'D:/UserData/Personal/GitHub/LudumDare44/LD44GameProject/Saved/Autosaves/Game/BluePrints/Player_withQTE_Auto2.uasset'
 [2019.04.28-20.45.45:929][ 68]LogFileHelpers: Auto-saving content packages took 0.112
+
