@@ -1420,3 +1420,56 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2019.04.28-20.07.48:786][849]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (36.727 sec). This should never happen. Something is wrong with the timer delegate!
 [2019.04.28-20.07.50:089][885]LogShaderCompilers: Display: Shaders left to compile 460
 [2019.04.28-20.07.50:701][905]LogShaderCompilers: Display: Shaders left to compile 450
+[2019.04.28-20.07.54:133][999]LogShaderCompilers: Display: Shaders left to compile 440
+[2019.04.28-20.08.01:836][228]LogShaderCompilers: Display: Shaders left to compile 430
+[2019.04.28-20.08.09:472][464]LogShaderCompilers: Display: Shaders left to compile 420
+[2019.04.28-20.08.09:571][467]LogShaderCompilers: Display: Shaders left to compile 410
+[2019.04.28-20.08.14:523][600]LogShaderCompilers: Display: Shaders left to compile 400
+[2019.04.28-20.08.25:733][878]LogShaderCompilers: Display: Shaders left to compile 390
+[2019.04.28-20.08.31:556][ 42]LogShaderCompilers: Display: Shaders left to compile 380
+[2019.04.28-20.08.36:502][178]LogShaderCompilers: Display: Shaders left to compile 370
+[2019.04.28-20.08.38:540][237]LogShaderCompilers: Display: Shaders left to compile 360
+[2019.04.28-20.08.42:210][368]LogShaderCompilers: Display: Shaders left to compile 350
+[2019.04.28-20.08.42:487][377]LogShaderCompilers: Display: Shaders left to compile 340
+[2019.04.28-20.08.51:370][675]LogShaderCompilers: Display: Shaders left to compile 330
+[2019.04.28-20.08.51:959][695]LogShaderCompilers: Display: Shaders left to compile 320
+[2019.04.28-20.08.55:466][806]LogShaderCompilers: Display: Shaders left to compile 310
+[2019.04.28-20.08.58:640][915]LogShaderCompilers: Display: Shaders left to compile 300
+[2019.04.28-20.09.00:873][989]LogShaderCompilers: Display: Shaders left to compile 290
+[2019.04.28-20.09.05:714][155]LogShaderCompilers: Display: Shaders left to compile 280
+[2019.04.28-20.09.08:763][262]LogShaderCompilers: Display: Shaders left to compile 270
+[2019.04.28-20.09.10:063][307]LogShaderCompilers: Display: Shaders left to compile 260
+[2019.04.28-20.09.14:739][469]LogShaderCompilers: Display: Shaders left to compile 250
+[2019.04.28-20.09.15:215][481]LogShaderCompilers: Display: Shaders left to compile 240
+[2019.04.28-20.09.16:962][541]LogShaderCompilers: Display: Shaders left to compile 230
+[2019.04.28-20.09.19:844][641]LogShaderCompilers: Display: Shaders left to compile 220
+[2019.04.28-20.09.22:926][742]LogShaderCompilers: Display: Shaders left to compile 210
+[2019.04.28-20.09.24:264][792]LogShaderCompilers: Display: Shaders left to compile 200
+[2019.04.28-20.09.25:580][843]LogShaderCompilers: Display: Shaders left to compile 190
+[2019.04.28-20.09.31:399][113]LogShaderCompilers: Display: Shaders left to compile 180
+[2019.04.28-20.09.31:552][118]LogShaderCompilers: Display: Shaders left to compile 170
+[2019.04.28-20.09.31:992][136]LogShaderCompilers: Display: Shaders left to compile 160
+[2019.04.28-20.09.35:631][271]LogShaderCompilers: Display: Shaders left to compile 150
+[2019.04.28-20.09.38:677][401]LogShaderCompilers: Display: Shaders left to compile 140
+[2019.04.28-20.09.38:947][411]LogShaderCompilers: Display: Shaders left to compile 130
+[2019.04.28-20.09.38:979][412]LogShaderCompilers: Display: Shaders left to compile 120
+[2019.04.28-20.09.40:863][501]LogShaderCompilers: Display: Shaders left to compile 110
+[2019.04.28-20.09.43:447][618]LogShaderCompilers: Display: Shaders left to compile 100
+[2019.04.28-20.09.43:639][627]LogShaderCompilers: Display: Shaders left to compile 90
+[2019.04.28-20.09.44:998][681]LogShaderCompilers: Display: Shaders left to compile 80
+[2019.04.28-20.09.46:267][743]LogShaderCompilers: Display: Shaders left to compile 70
+[2019.04.28-20.09.47:459][801]LogShaderCompilers: Display: Shaders left to compile 60
+[2019.04.28-20.09.47:861][822]LogShaderCompilers: Display: Shaders left to compile 50
+[2019.04.28-20.09.49:206][886]LogShaderCompilers: Display: Shaders left to compile 40
+[2019.04.28-20.09.50:013][925]LogShaderCompilers: Display: Shaders left to compile 30
+[2019.04.28-20.09.51:447][995]LogShaderCompilers: Display: Shaders left to compile 20
+[2019.04.28-20.09.53:109][ 70]LogShaderCompilers: Display: Shaders left to compile 10
+[2019.04.28-20.18.45:788][988]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.04.28-20.18.59:649][538]LogEditorViewport: Clicking Background
+[2019.04.28-20.19.01:171][623]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.04.28-20.19.01:343][633]LogAssetEditorManager: Opening Asset editor for ParticleSystem /Game/Materials/Particles/Sprites/P_Sparks.P_Sparks
+[2019.04.28-20.19.01:525][633]LogContentBrowser: Native class hierarchy updated for 'Cascade' in 0.0018 seconds. Added 2 classes and 2 folders.
+[2019.04.28-20.19.07:292][863]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.04.28-20.19.07:691][863]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMapEC95A14D4A7C558A29373180C8EE01C2.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap.umap'
+[2019.04.28-20.19.07:799][863]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestMap_BuiltData" FILE="../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset" SILENT=true
+[2019.04.28-20.19.07:837][863]LogSavePackage: Moving '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Saved/TestMap_BuiltDataCAFB218D4AB15C017D3319974B1E2955.tmp' to '../../../../../Unreal_Projects/LudumDare44/LD44GameProject/Content/TestMap_BuiltData.uasset'
